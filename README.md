@@ -9,3 +9,4 @@
 **Index**
 
 [Interviews](https://github.com/malombardi/python_tests/tree/develop/interviews)
+[Algorithms](https://github.com/malombardi/python_tests/tree/develop/algorithms)
