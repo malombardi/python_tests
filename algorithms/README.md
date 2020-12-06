@@ -7,6 +7,7 @@
 * [Prime numbers](https://github.com/malombardi/python_tests/blob/develop/algorithms/Primes.ipynb)
 
 #### Sorting
+* [Bubble Sort](https://github.com/malombardi/python_tests/blob/develop/algorithms/BubbleSort.ipynb)
 * [Insertion Sort](https://github.com/malombardi/python_tests/blob/develop/algorithms/InsertionSort.ipynb)
 * [Selection Sort](https://github.com/malombardi/python_tests/blob/develop/algorithms/SelectionSort.ipynb)
 * [Quick Sort](https://github.com/malombardi/python_tests/blob/develop/algorithms/QuickSort.ipynb)
