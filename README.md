@@ -10,6 +10,6 @@
 
 [Interviews](https://github.com/malombardi/python_tests/tree/develop/interviews)
 
-[Machine LEarning](https://github.com/malombardi/python_tests/tree/develop/machine_learning)
+[Machine Learning](https://github.com/malombardi/python_tests/tree/develop/machine_learning)
 
 [Snippets](https://github.com/malombardi/python_tests/tree/develop/snippets)
