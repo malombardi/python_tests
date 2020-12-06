@@ -2,9 +2,9 @@
 
 #### Math
 
-* [Fibonacci](https://github.com/malombardi/python_tests/blob/develop/algorithms/Fibonacci.ipynb)
-* [Pascal Triangle](https://github.com/malombardi/python_tests/blob/develop/algorithms/PasacalTriangle.ipynb)
-* [Prime numbers](https://github.com/malombardi/python_tests/blob/develop/algorithms/Primes.ipynb)
+* [Fibonacci](https://github.com/malombardi/python_tests/blob/develop/algorithms/math/Fibonacci.ipynb)
+* [Pascal Triangle](https://github.com/malombardi/python_tests/blob/develop/algorithms/math/PasacalTriangle.ipynb)
+* [Prime numbers](https://github.com/malombardi/python_tests/blob/develop/algorithms/math/Primes.ipynb)
 
 #### Sorting
 * [Bubble Sort](https://github.com/malombardi/python_tests/blob/develop/algorithms/sorting/BubbleSort.ipynb)
@@ -14,4 +14,4 @@
 * [Selection Sort](https://github.com/malombardi/python_tests/blob/develop/algorithms/sorting/SelectionSort.ipynb)
 
 #### Misc
-* [Sudoku Solver](https://github.com/malombardi/python_tests/blob/develop/algorithms/SudokuSolver.ipynb)
+* [Sudoku Solver](https://github.com/malombardi/python_tests/blob/develop/algorithms/misc/SudokuSolver.ipynb)
