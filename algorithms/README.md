@@ -9,8 +9,9 @@
 #### Sorting
 * [Bubble Sort](https://github.com/malombardi/python_tests/blob/develop/algorithms/BubbleSort.ipynb)
 * [Insertion Sort](https://github.com/malombardi/python_tests/blob/develop/algorithms/InsertionSort.ipynb)
-* [Selection Sort](https://github.com/malombardi/python_tests/blob/develop/algorithms/SelectionSort.ipynb)
+* [Merge Sort](https://github.com/malombardi/python_tests/blob/develop/algorithms/MergeSort.ipynb)
 * [Quick Sort](https://github.com/malombardi/python_tests/blob/develop/algorithms/QuickSort.ipynb)
+* [Selection Sort](https://github.com/malombardi/python_tests/blob/develop/algorithms/SelectionSort.ipynb)
 
 #### Misc
 * [Sudoku Solver](https://github.com/malombardi/python_tests/blob/develop/algorithms/SudokuSolver.ipynb)
