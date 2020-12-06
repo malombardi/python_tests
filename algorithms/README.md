@@ -7,11 +7,11 @@
 * [Prime numbers](https://github.com/malombardi/python_tests/blob/develop/algorithms/Primes.ipynb)
 
 #### Sorting
-* [Bubble Sort](https://github.com/malombardi/python_tests/blob/develop/algorithms/BubbleSort.ipynb)
-* [Insertion Sort](https://github.com/malombardi/python_tests/blob/develop/algorithms/InsertionSort.ipynb)
-* [Merge Sort](https://github.com/malombardi/python_tests/blob/develop/algorithms/MergeSort.ipynb)
-* [Quick Sort](https://github.com/malombardi/python_tests/blob/develop/algorithms/QuickSort.ipynb)
-* [Selection Sort](https://github.com/malombardi/python_tests/blob/develop/algorithms/SelectionSort.ipynb)
+* [Bubble Sort](https://github.com/malombardi/python_tests/blob/develop/algorithms/sorting/BubbleSort.ipynb)
+* [Insertion Sort](https://github.com/malombardi/python_tests/blob/develop/algorithms/Isorting/nsertionSort.ipynb)
+* [Merge Sort](https://github.com/malombardi/python_tests/blob/develop/algorithms/sorting/MergeSort.ipynb)
+* [Quick Sort](https://github.com/malombardi/python_tests/blob/develop/algorithms/sorting/QuickSort.ipynb)
+* [Selection Sort](https://github.com/malombardi/python_tests/blob/develop/algorithms/sorting/SelectionSort.ipynb)
 
 #### Misc
 * [Sudoku Solver](https://github.com/malombardi/python_tests/blob/develop/algorithms/SudokuSolver.ipynb)
