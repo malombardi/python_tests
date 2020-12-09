@@ -7,4 +7,5 @@
 * CTL (Fitnes)
 * TSB (Freshness)
 </br>
-**cycling.py** Contains the same cycling_analytics notebook in one program. Also can get newer data and save it for later usage. </br>
+
+**cycling** Contains the same cycling_analytics notebook in one program. Also can get newer data and save it for later usage. </br>
