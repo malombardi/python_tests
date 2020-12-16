@@ -16,7 +16,6 @@ def merge_dfs(df_dest, df_dates_between):
     df_merged = df_dates_between.merge(df_dest, on='Fecha', how='left')
     df_merged['NP']=df_merged['NP'].fillna(0)
     df_merged['Tiempo']=df_merged['Tiempo'].fillna('0:0:0')
-
     return df_merged
 
 def set_ftp(ftp, df):
@@ -104,12 +103,12 @@ def start_calculations(df_origin, df_dest):
 
         set_ftp(240, df_actual)
         calculate_values(df_origin, df_actual)
-
+        
         df_actual.Fecha = df_actual.Fecha.astype(str)
         if df_origin.shape[0] > 0:
             df_origin = df_origin.append(df_actual, ignore_index = True)
         else:
             df_origin = df_actual
+    return df_origin
 
-        df_origin.drop(['Unnamed: 0'], inplace=True, axis=1)
         

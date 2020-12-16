@@ -23,7 +23,11 @@ def plot_values(df):
 
 def main():
     df_origin, df_dest = fm.get_data_from_files()
-    dc.start_calculations(df_origin, df_dest)
+    df_origin = dc.start_calculations(df_origin, df_dest)
+
+    column_names = ['Fecha', 'NP', 'FTP', 'IF', 'Seconds', 'TSS', 'Fatigue', 'Fitness', 'Freshness']
+    df_origin = df_origin[column_names]
+    
     fm.save_df_to_csv(df_origin)
     
     plot_values(df_origin)
