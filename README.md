@@ -8,6 +8,8 @@
 
 [Algorithms](https://github.com/malombardi/python_tests/tree/develop/algorithms)
 
+[Data Analysis](https://github.com/malombardi/python_tests/tree/develop/data_analysis)
+
 [Interviews](https://github.com/malombardi/python_tests/tree/develop/interviews)
 
 [Machine Learning](https://github.com/malombardi/python_tests/tree/develop/machine_learning)
