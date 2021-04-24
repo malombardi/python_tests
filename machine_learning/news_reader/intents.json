@@ -1,0 +1,12 @@
+{"intents":
+[
+    {"tag" : "greeting",
+    "patterns" : ["Hey", "Hello", "Hi"],
+    "responses" : ""},
+    {"tag" : "fetch_all",
+    "patterns" : ["Fetch news", "Fetch", "All", "Full", "Read", "readme"],
+    "responses" : ""},
+    {"tag" : "exit",
+    "patterns" : ["Stop", "Quit"],
+    "responses" : ""}
+]}
