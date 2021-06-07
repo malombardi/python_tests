@@ -3,6 +3,8 @@ import pandas as pd
 import numpy as np
 from os import listdir
 from os.path import isfile, join
+from json import JSONDecodeError
+import progress_bar as progressBar
 
 class processor :
     def __init__(self) :
@@ -50,39 +52,37 @@ class processor :
         self.tickers = pd.concat([dow_tickers_df, ftse_100_tickers_df, ftse_250_tickers_df, nasdaq_tickers_df, nifty_50_tickers_df, other_tickers_df, sp500_tickers_df], ignore_index=True)
         
     def save_tickers_in_csv(self, file_name) :
-        self.tickers.to_csv('data/' + file_name + '.csv', index = False)
+        self.tickers.to_csv(file_name + '.csv', index = False)
         
     def get_historical_data(self, ticker_lst, tickers_with_L = False) :
         processed = self.__get_processed_tickers()
         tickers_no_processed = []
-
-        for ticker in ticker_lst :
+        
+        for ticker in progressBar.progressBar(ticker_lst, prefix = 'Progress:', suffix = 'Complete', length = 50):
             if ticker not in processed :
                 try : 
+                    ticker_copy = ticker
                     if tickers_with_L :
-                        ticker = ticker + ".L"
-                    historical = si.get_data(ticker, index_as_date = True, interval = "1d")
+                        ticker_copy = ticker_copy + ".L"
+                    historical = si.get_data(ticker_copy, start_date = '01/01/2020', index_as_date = True, interval = "1d")
                     df = pd.DataFrame(historical, columns = ['close'])
                     df.columns = [ticker]
-                    ticker = ticker.replace('.','#')
-                    df.to_csv('data/' + ticker + '.csv', index = True)
+                    ticker_copy = ticker_copy.replace('.','#')
+                    df.to_csv('data/' + ticker_copy + '.csv', index = True)
                 except AssertionError :
                     tickers_no_processed.append(ticker)
-                    print(f'{ticker} not processed')
                 except KeyError :
                     tickers_no_processed.append(ticker)
-                    print(f'{ticker} not processed')
                 except TypeError :
                     tickers_no_processed.append(ticker)
-                    print(f'{ticker} not processed')
                 except JSONDecodeError :
                     tickers_no_processed.append(ticker)
-                    print(f'{ticker} not processed')
         
         return tickers_no_processed
     
     def __get_processed_tickers(self) :
         tickers = [f for f in listdir('data') if isfile(join('data', f))]
-        for ticker in tickers :
-            ticker = ticker.replace('#','.')
+        tickers[:] = [(ticker.split(".")[0]).replace('#','.').replace('.','-') for ticker in tickers]
         return tickers
+    
+    
